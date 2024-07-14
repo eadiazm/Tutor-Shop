@@ -25,10 +25,9 @@ const initialState = {
   },
 
   bookTutoring: {
-    reserveName: "",
+    subjectId: "",
     tutorId: "",
-    reservationTypeId:"",
-    email: "",
+    reservationTypeId: "",
     date_start: "",
     date_end: "",
   },

@@ -45,7 +45,7 @@ const Registrations2 = () => {
   return (
     <>
       <div className="container height-container">
-        <h1 className="text-center">
+        <h1 className="text-center mt-3">
           <p>Continúa con el registro</p>
         </h1>
         <h6 className="text-center">
@@ -212,10 +212,10 @@ const Registrations2 = () => {
               </div>
               <button
                 type="submit"
-                className="btn btn-primary"
+                className="btn btn-dark mb-5"
                 disabled={isSubmitting}
               >
-                Siguiente
+                Enviar
               </button>
               {props.formSended && (
                 <div className="alert alert-success" role="alert">

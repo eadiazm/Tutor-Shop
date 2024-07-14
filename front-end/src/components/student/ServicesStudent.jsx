@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import { BsFillPeopleFill } from "react-icons/bs";
+import { BsFillPersonFill } from "react-icons/bs";
 const ServicesStudent = () => {
   return (
     <>
@@ -14,7 +15,9 @@ const ServicesStudent = () => {
             style={{ borderRadius: "1rem" }}
           >
             <div className="card-body py-4">
-              <h5 className="card-title">Card title</h5>
+              <h5 className="card-title">
+                <BsFillPersonFill />{" "}
+              </h5>
               <h6 className="card-subtitle mb-2 text-body-secondary">
                 Tutoría Individual
               </h6>
@@ -35,7 +38,9 @@ const ServicesStudent = () => {
             style={{ borderRadius: "1rem" }}
           >
             <div className="card-body py-4">
-              <h5 className="card-title">Card title</h5>
+              <h5 className="card-title">
+                <BsFillPeopleFill />
+              </h5>
               <h6 className="card-subtitle mb-2 text-body-secondary">
                 Tutoría en Grupo
               </h6>

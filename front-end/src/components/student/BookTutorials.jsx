@@ -35,7 +35,6 @@ const BookTutorials = ({ sendingReload, updateReload }) => {
 
   return (
     <div className="grid back-color p-5 align-item-center">
-      {console.log(requests)}
       <div className="">
         <h2 className="text-center">Tus tutorias</h2>
         <div

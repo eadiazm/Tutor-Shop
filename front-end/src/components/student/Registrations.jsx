@@ -21,7 +21,7 @@ const Registrations = () => {
   return (
     <>
       <div className="container height-container">
-        <h1 className="text-center">
+        <h1 className="text-center mt-3">
           <p>Regístrate como estudiante</p>
         </h1>
         <h6 className="text-center">
@@ -146,7 +146,7 @@ const Registrations = () => {
 
               <button
                 type="submit"
-                className="btn btn-primary"
+                className="btn btn-dark mb-5"
                 disabled={isSubmitting}
               >
                 Siguiente

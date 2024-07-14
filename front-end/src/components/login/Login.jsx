@@ -20,7 +20,7 @@ export function Login() {
           navigate("../tutor/Dashboard");
         }
         if (user.isStudent) {
-          navigate("../student/Dashboard");
+          navigate("../student/dashboardstudent");
         }
       }, 2000);
     }
@@ -49,7 +49,6 @@ export function Login() {
 
       dispatch(login(response));
       setFormSended(true);
-
     } catch (error) {
       console.error("Error:", error);
       alert("Error en la autenticación");
@@ -79,8 +78,9 @@ export function Login() {
               </label>
               <Field
                 type="email"
-                className={`form-control ${touched.email && errors.email ? "is-invalid" : ""
-                  }`}
+                className={`form-control ${
+                  touched.email && errors.email ? "is-invalid" : ""
+                }`}
                 id="email"
                 name="email"
                 aria-describedby="emailHelp"
@@ -99,8 +99,9 @@ export function Login() {
               </label>
               <Field
                 type="password"
-                className={`form-control ${touched.password && errors.password ? "is-invalid" : ""
-                  }`}
+                className={`form-control ${
+                  touched.password && errors.password ? "is-invalid" : ""
+                }`}
                 id="password"
                 name="password"
                 autoComplete="current-password"

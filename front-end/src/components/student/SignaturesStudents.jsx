@@ -1,34 +1,48 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import {
+  BsCalculator,
+  BsPcDisplay,
+  BsBook,
+  BsGlobeAmericas,
+  BsFlower3,
+  BsTranslate,
+} from "react-icons/bs";
 
 const SignaturesStudents = () => {
   const data = [
     {
+      title: <BsCalculator />,
       signature: "Matemáticas",
       description:
         "Desde álgebra hasta cálculo, nuestros expertos profesores te ayudarán a dominar las matemáticas.",
     },
     {
+      title: <BsPcDisplay />,
       signature: "Informática",
       description:
         "Mejora tus habilidades en programación, bases de datos y más con nuestros tutores especializados.",
     },
     {
+      title: <BsBook />,
       signature: "Lengua y Literatura",
       description:
         "Mejora tus habilidades de escritura, comprensión lectora y más con nuestros expertos en el área.",
     },
     {
+      title: <BsGlobeAmericas />,
       signature: "Ciencias Sociales",
       description:
         "AriDomina las materias de historia, geografía, economía y más con nuestros tutores expertos.",
     },
     {
+      title: <BsFlower3 />,
       signature: "Ciencias Naturales",
       description:
         "Mejora tus conocimientos en biología, química, física y más con nuestros tutores especializados.",
     },
     {
+      title: <BsTranslate />,
       signature: "Idiomas",
       description:
         "Mejora tus habilidades en inglés, español, francés y más con nuestros tutores nativos.",
@@ -46,7 +60,7 @@ const SignaturesStudents = () => {
               style={{ borderRadius: "1rem" }}
             >
               <div className="card-body py-4">
-                <h5 className="card-title">Card title</h5>
+                <h5 className="card-title"> {info.title} </h5>
                 <h6 className="card-subtitle mb-2 text-body-secondary">
                   {info.signature}
                 </h6>

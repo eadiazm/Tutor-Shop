@@ -22,7 +22,7 @@
 }
 
 .height-container {
-  height: calc(100vh - 104px);
+  min-height: calc(100vh - 104px);
 }
 
 .displayNone {
@@ -101,6 +101,10 @@
 
   .font-h2-testimony {
     font-size: 2.25rem;
+  }
+
+  .tutorContainers {
+    max-width: 33.75rem;
   }
 }
 

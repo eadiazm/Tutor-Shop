@@ -10,7 +10,7 @@ import {
   setReserveTutorial,
 } from "../services/api";
 
-const BookReserve = ({sendingReload}) => {
+const BookReserve = ({ sendingReload }) => {
   const [subjects, setSubjects] = useState([]);
   const [tutorials, setTutorials] = useState([]);
   const [tutorNames, setTutorNames] = useState([]);
@@ -60,7 +60,7 @@ const BookReserve = ({sendingReload}) => {
       setTimeout(() => {
         setformSended(false);
       }, 3000);
-      sendingReload()
+      sendingReload();
     } catch (error) {
       setformSendedError(true);
       setTimeout(() => {
@@ -220,24 +220,6 @@ const BookReserve = ({sendingReload}) => {
               </Field>
               <ErrorMessage
                 name="reservationTypeId"
-                component="p"
-                className="invalid-feedback"
-              />
-            </div>
-            <div className="mb-3">
-              <label htmlFor="email" className="form-label">
-                Correo electrónico
-              </label>
-              <Field
-                name="email"
-                id="email"
-                type="email"
-                className={`form-control ${
-                  touched.email && errors.email ? "is-invalid" : ""
-                }`}
-              />
-              <ErrorMessage
-                name="email"
                 component="p"
                 className="invalid-feedback"
               />
