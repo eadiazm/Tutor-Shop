@@ -85,7 +85,7 @@ export function Subjects({ shouldUpdate }) {
             <div className="col-4">
               <button
                 type="button"
-                className="btn my-1 back-color"
+                className="btn my-1 btn-warning"
                 onClick={() => handleClickDelete(subject)}
               >
                 Eliminar

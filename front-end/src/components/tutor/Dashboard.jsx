@@ -34,7 +34,7 @@ export function Dashboard() {
           <Request onAcceptRequest={handleRequestAccepted} />
         </div>
       </div>
-      <div class="row row-cols-1 row-cols-lg-2">
+      <div className="row row-cols-1 row-cols-lg-2">
         <div className="col">
           <Scheduled
             shouldUpdate={updateScheduled}

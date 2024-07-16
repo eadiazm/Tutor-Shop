@@ -38,7 +38,6 @@ const Registrations2 = () => {
       passwordConfirm,
       // dataTreatment,
     };
-    console.log(sendData);
     props.handleSubmit(sendData);
   };
 

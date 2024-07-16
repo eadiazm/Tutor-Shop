@@ -60,7 +60,7 @@ export function Scheduled({ shouldUpdate, onUpdate }) {
       {requests.length > 0 ? (
         requests.map((request, index) => (
           <div key={index} className="row g-0">
-            <div className="d-flex text-center align-items-center justify-content-center w-100">
+            <div className="d-flex text-center align-items-center justify-content-center w-100 p-1">
               <div className="col-2">
                 <img
                   src={`https://ui-avatars.com/api/?name=${request.Student.Person.names}+${request.Student.Person.lastNames}&background=random`}
@@ -80,7 +80,7 @@ export function Scheduled({ shouldUpdate, onUpdate }) {
               <div className="col-4">
                 <button
                   type="button"
-                  className="btn btn-light"
+                  className="btn btn-warning"
                   onClick={() => handleActionClick(request)}
                 >
                   Cancelar

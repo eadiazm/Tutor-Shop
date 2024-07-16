@@ -64,7 +64,7 @@ export function Request({ onAcceptRequest }) {
       {requests && requests.length > 0 ? (
         requests.map((request, index) => (
           <div key={index} className="row g-0">
-            <div className="d-flex text-center align-items-center justify-content-center w-100">
+            <div className="d-flex text-center align-items-center justify-content-center w-100 p-1">
               <div className="col-3">
                 <img
                   src={`https://ui-avatars.com/api/?name=${request.Student.Person.names}+${request.Student.Person.lastNames}&background=random`}
@@ -87,7 +87,7 @@ export function Request({ onAcceptRequest }) {
               <div className="col-3">
                 <button
                   type="button"
-                  className="btn btn-dark"
+                  className="btn btn-success"
                   onClick={() => handleActionClick(request, "accept")}
                 >
                   Aceptar
@@ -137,14 +137,18 @@ export function Request({ onAcceptRequest }) {
             <div className="modal-footer">
               <button
                 type="button"
-                className="btn btn-dark"
+                className={
+                  action === "accept" ? "btn btn-success" : "btn btn-warning"
+                }
                 onClick={handleConfirmAction}
               >
                 {action === "accept" ? "Aceptar" : "Rechazar"}
               </button>
               <button
                 type="button"
-                className="btn btn-warning"
+                className={
+                  action === "accept" ? "btn btn-warning" : "btn btn-success"
+                }
                 onClick={handleClose}
               >
                 Cancelar
